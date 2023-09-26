@@ -3,8 +3,8 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Reset, Submit
 from django.forms import BaseFormSet
 from django.forms.models import BaseInlineFormSet
-from django.utils.translation import ugettext as _
-from django.utils.translation import ugettext_lazy as _l
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _l
 
 
 class FormsetHelper(FormHelper):

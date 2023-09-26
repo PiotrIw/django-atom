@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.core.exceptions import ImproperlyConfigured
 from django.http import HttpResponseRedirect
 from django.utils.encoding import force_text
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from django.views.generic.detail import (BaseDetailView,
                                          SingleObjectTemplateResponseMixin)
 
