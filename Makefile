@@ -1,5 +1,11 @@
 .PHONY: clean-pyc clean-build docs
 
+build:
+	docker-compose build web
+
+up:
+	docker-compose up
+
 help:
 	@echo "clean-build - remove build artifacts"
 	@echo "clean-pyc - remove Python file artifacts"

@@ -1,0 +1,20 @@
+version: '2.1'
+# This is application’s services configuration for development purposes only.
+
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: .contrib/docker/Dockerfile
+      args:
+        PYTHON_VERSION: '${PYTHON_VERSION:-3.10}'
+        DJANGO_VERSION: '${DJANGO_VERSION:-==3.2.*}'
+
+    volumes:
+      - .:/code
+    environment:
+      DEBUG: True
+    ports:
+      - "8001:8001"
+
