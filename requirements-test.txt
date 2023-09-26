@@ -1,4 +1,4 @@
-django>=1.5.1
+django>=3.2.0
 coverage
 coveralls
 mock>=1.0.1
@@ -6,8 +6,8 @@ flake8>=2.1.0
 tox>=1.7.0
 
 # Additional test requirements go here
-django-autocomplete-light<3
-django-filter==1.0.2
-django-filters==0.2.1
-django-guardian==1.4.6
+django-autocomplete-light==3.9.7
+django-filter==23.2
+django-guardian==2.4.0
+
 

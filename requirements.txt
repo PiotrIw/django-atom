@@ -1,4 +1,4 @@
-django>=1.5.1
-wheel==0.24.0
-django-tinycontent
-django-crispy-forms
+django>=3.2.0
+wheel==0.41.2
+django-tinycontent==0.8.0
+django-crispy-forms==1.14.0
