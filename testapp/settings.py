@@ -10,7 +10,12 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sites",
     "atom",
+    "guardian",
 ]
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'guardian.backends.ObjectPermissionBackend',
+)
 SITE_ID = 1
 MIDDLEWARE_CLASSES = ()
 SECRET_KEY = 'secret'
