@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.core.exceptions import ImproperlyConfigured
 from django.http import HttpResponseRedirect
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.translation import gettext as _
 from django.views.generic.detail import (BaseDetailView,
                                          SingleObjectTemplateResponseMixin)
@@ -57,7 +57,7 @@ class ActionMixin(object):
 
     def get_success_url(self):
         if self.success_url:
-            self.success_url = force_text(self.success_url)
+            self.success_url = force_str(self.success_url)
             return self.success_url.format(**self.object.__dict__)
         else:
             raise ImproperlyConfigured(
