@@ -35,7 +35,6 @@ setup(
     include_package_data=True,
     install_requires=[
     ],
-    use_2to3=True,
     license="BSD",
     zip_safe=False,
     keywords='django-atom',
