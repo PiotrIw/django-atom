@@ -1,7 +1,7 @@
 from os.path import basename
 
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class AttachmentBase(models.Model):
@@ -11,7 +11,7 @@ class AttachmentBase(models.Model):
     def filename(self):
         return basename(self.attachment.name)
 
-    def __unicode__(self):
+    def __str__(self):
         return "%s" % (self.filename)
 
     def get_absolute_url(self):
