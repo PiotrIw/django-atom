@@ -60,6 +60,7 @@ class FormSetMixin(object):
 
         if formset.is_valid():
             self.object.save()
+            form.save_m2m()
             return self.formset_valid(form, formset)
         else:
             return self.formset_invalid(form, formset)
